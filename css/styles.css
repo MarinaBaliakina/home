@@ -1094,3 +1094,10 @@ video:hover {
   }
 }
 
+iframe .tnf {
+    width: 800px;
+}
+
+iframe .planty {
+    width: 800px;
+}
