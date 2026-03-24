@@ -977,6 +977,10 @@ video:hover {
     font-size: 20px;
   }
 
+  .video-item-gr {
+    max-width: 300px;
+  }
+
   #work h1 {
     font-size: 24px;
   }
@@ -1015,6 +1019,7 @@ video:hover {
 /* Make video-item-gr span 2 columns so arrow is to the right */
 .video-item-gr {
   grid-column: span 2;
+  
 }
 
 /* Tablet: Switch to flexbox for vertical stacking (1 video per row) */
@@ -1082,6 +1087,10 @@ video:hover {
   .arrow-item {
     justify-content: flex-start;
     width: 100%;
+  }
+
+  .video-item-gr {
+    max-width: 400px;
   }
 }
 
