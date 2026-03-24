@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>About | Marina Baliakina</title>
+
+  <link rel="stylesheet" href="../css/styles.css" />
+
+  <style>
+
+    /* ===== INTRO ===== */
+    .about-intro {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 80px;
+      margin-bottom: 100px;
+    }
+
+    .about-image img {
+      width: 300px;
+      border-radius: 300px;
+    }
+
+    .about-text {
+      max-width: 520px;
+    }
+
+    /* ===== HORIZONTAL TIMELINE ===== */
+    .timeline-horizontal {
+      margin: 80px 0;
+      overflow-x: auto;
+    }
+
+    .timeline-track {
+      display: flex;
+      gap: 60px;
+      position: relative;
+      padding: 40px 0;
+      min-width: 800px;
+    }
+
+    .timeline-track::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #111;
+      transform: translateY(-50%);
+    }
+
+    .timeline-item {
+      position: relative;
+      text-align: center;
+      width: 200px;
+
+      opacity: 0;
+      transform: translateY(40px);
+      transition: 0.6s ease;
+    }
+
+    .timeline-item.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .timeline-dot {
+      width: 14px;
+      height: 14px;
+      background: #f4e04d;
+      border-radius: 50%;
+      margin: 0 auto 15px;
+      position: relative;
+      z-index: 2;
+      transition: 0.3s;
+    }
+
+    .timeline-item:hover .timeline-dot {
+      transform: scale(1.4);
+    }
+
+    .timeline-year {
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      opacity: 0.6;
+    }
+
+    .timeline-content h3 {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .timeline-content p {
+      font-size: 13px;
+      color: #555;
+    }
+
+    /* ===== SKILLS (more visual section) ===== */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .skill-block {
+      border-left: 3px solid #f4e04d;
+      padding-left: 15px;
+    }
+
+    .skill-block h3 {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .skill-block p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* ===== SPACING ===== */
+    .project h2 {
+      margin-top: 60px;
+      margin-bottom: 10px;
+    }
+
+    /* ===== MOBILE ===== */
+    @media (max-width: 800px) {
+      .about-intro {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="logo">
+    <a href="../index.html">
+      <img src="../img/logo.png" alt="logo saying Marina Baliakina">
+    </a>
+  </div>
+
+  <ul>
+    <li class="dropdown">
+      <a href="#work">Work</a>
+      <ul class="dropdown-menu">
+        <li><a href="index.html#smm">Social Media</a></li>
+        <li><a href="index.html#design">Graphic & Motion Design</a></li>
+        <li><a href="index.html#videography">Videography</a></li>
+        <li><a href="https://marina-baliakina.com/" target="_blank">Photography</a></li>
+      </ul>
+    </li>
+    <li><a href="pages/about.html">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ABOUT -->
+<section class="project">
+
+  <!-- INTRO -->
+  <div class="about-intro">
+
+    <div class="about-image">
+      <img src="../img/profile.jpg" alt="Marina Baliakina">
+    </div>
+
+    <div class="about-text">
+      <h1><span class="highlight2">About Me</span></h1>
+
+      <p>
+        Hi, I’m Marina. I’m a photographer, social media specialist, and content creator with industry experience in social media and photography at Humber Polytechnic.
+      </p>
+
+      <p>
+        I manage three social media accounts for Humber International and create photo and video content for Humber Athletics, focusing on storytelling, engagement, and visual direction.
+      </p>
+
+      <p>
+        I also have over six years of experience as a freelance photographer, working closely with clients to meet their expectations and delivering consistent results, which led to over 70 five-star reviews.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- TIMELINE -->
+  <h2>My Journey</h2>
+
+  <div class="timeline-horizontal">
+    <div class="timeline-track">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2020–Present</div>
+        <div class="timeline-content">
+          <h3>Freelance Photographer</h3>
+          <p>6+ years, 70+ 5-star reviews</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2021–2022</div>
+        <div class="timeline-content">
+          <h3>Media Communications</h3>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2024–2026</div>
+        <div class="timeline-content">
+          <h3>Multimedia Design</h3>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2025–2026</div>
+        <div class="timeline-content">
+          <h3>Social Media Specialist</h3>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-year">2025–2026</div>
+        <div class="timeline-content">
+          <h3>Humber Hawks Photographer</h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <h2>Skills</h2>
+
+  <div class="skills-grid">
+
+    <div class="skill-block">
+      <h3>Social Media & Strategy</h3>
+      <p>Content planning, trend research, audience growth, analytics-driven decisions.</p>
+    </div>
+
+    <div class="skill-block">
+      <h3>Content Creation</h3>
+      <p>Short-form video, reels, storytelling, platform-specific content formats.</p>
+    </div>
+
+    <div class="skill-block">
+      <h3>Photography & Videography</h3>
+      <p>Portrait, lifestyle, event coverage, filming and editing.</p>
+    </div>
+
+    <div class="skill-block">
+      <h3>Creative Direction</h3>
+      <p>Visual storytelling, concept development, brand-aligned content.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ANIMATION -->
+<script>
+  const items = document.querySelectorAll(".timeline-item");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, { threshold: 0.2 });
+
+  items.forEach(item => observer.observe(item));
+</script>
+
+</body>
+</html>
